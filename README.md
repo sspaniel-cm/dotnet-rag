@@ -22,17 +22,31 @@ This project illustrates the development of a custom RAG (Retrieval Augmented Ge
 
 1. Clone the repository.
 
-2. Run the docker compose to set up the SQL Server database:
+2. Add your Azure AI Services and Azure AI Foundry credentials to the `program.cs` file:
 
-   ```bash
+   ```csharp
+    // azure image analysis client
+    var imageAnalysisEndpoint = "[Azure AI Vision Endpoint]";
+    var imageAnalysisApiKey = "[Azure AI Vision API Key]";
+    var imageAnalysisClient = new ImageAnalysisClient(new Uri(imageAnalysisEndpoint), new AzureKeyCredential(imageAnalysisApiKey));
+
+    // azure embeddings client
+    var embeddingsEndpoint = "[Azure Foundry Endpoint]";
+    var embeddingsApiKey = "[Azure Foundry API Key]";
+    var embeddingsClient = new EmbeddingsClient(new Uri(embeddingsEndpoint), new AzureKeyCredential(embeddingsApiKey));
+    ```
+
+3. Run docker compose (src/Dotnet.RAG) to start SQL Server:
+
+```bash
    docker-compose up -d
-   ```
+```
 
-3. Run the application:
+4. Run the application (src/Dotnet.RAG/Dotnet.RAG.Console):
 
-   ```bash
+```bash
    dotnet run
-   ```
+```
 
 ## License
 
