@@ -1,0 +1,9 @@
+services:
+    sql_server:
+        image: "mcr.microsoft.com/mssql/server:2025-latest"
+        container_name: sql_server
+        ports:
+            - 1433:1433
+        environment:
+            SA_PASSWORD: "password123!"
+            ACCEPT_EULA: "Y"
