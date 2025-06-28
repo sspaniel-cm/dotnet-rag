@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project illustrates the development of a custom RAG (Retrieval Augmented Generation) pipeline within a .NET application. It facilitates semantic photo search through the integration of SQL Server 2025, Azure AI Vision, and Azure Foundry.
+This project illustrates the development of a custom RAG (Retrieval Augmented Generation) pipeline within a .NET application. It facilitates semantic photo search through the integration of SQL Server 2025, Azure AI Vision, and Azure AI Foundry.
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@ This project illustrates the development of a custom RAG (Retrieval Augmented Ge
     - Endpoint
     - API Key
     - https://docs.azure.cn/en-us/ai-services/multi-service-resource
-- Azure Foundry embedding model
+- Azure AI Foundry embedding model
     - Endpoint
     - API Key
     - https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/models-featured#cohere-command-and-embed
