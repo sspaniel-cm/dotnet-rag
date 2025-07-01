@@ -9,11 +9,11 @@ This project illustrates the development of a custom RAG (Retrieval Augmented Ge
 - Azure AI Services resource
     - Endpoint
     - API Key
-    - https://docs.azure.cn/en-us/ai-services/multi-service-resource
+    - [Documentation](https://docs.azure.cn/en-us/ai-services/multi-service-resource)
 - Azure AI Foundry embedding model
     - Endpoint
     - API Key
-    - https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/models-featured#cohere-command-and-embed
+    - [Documentation](https://ai.azure.com/explore/models/embed-v-4-0/version/1/registry/azureml-cohere?tid=27312afb-009f-4fed-a8bb-9737425cc42a)
 - Docker
 - SQL Server 2025
 - .NET SDK 8.0
